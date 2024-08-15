@@ -29,7 +29,6 @@ import org.eclipse.jetty.http.BadMessageException;
 import org.eclipse.jetty.http.HttpHeader;
 import org.eclipse.jetty.http.HttpMethod;
 import org.eclipse.jetty.http.HttpStatus;
-import org.eclipse.jetty.security.openid.OpenIdConfiguration;
 import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.Response;
@@ -127,14 +126,6 @@ public class OpenIdProvider extends ContainerLifeCycle
     public void join() throws InterruptedException
     {
         server.join();
-    }
-
-    public OpenIdConfiguration getOpenIdConfiguration()
-    {
-        String provider = getProvider();
-        String authEndpoint = provider + AUTH_PATH;
-        String tokenEndpoint = provider + TOKEN_PATH;
-        return new OpenIdConfiguration(provider, authEndpoint, tokenEndpoint, clientId, clientSecret, null);
     }
 
     public CounterStatistic getLoggedInUsers()

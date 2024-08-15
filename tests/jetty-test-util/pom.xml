@@ -18,15 +18,11 @@
   <dependencies>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-openid</artifactId>
+      <artifactId>jetty-server</artifactId>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-util</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-server</artifactId>
     </dependency>
   </dependencies>
 
