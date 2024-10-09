@@ -344,7 +344,7 @@
     <testcontainers.version>1.20.2</testcontainers.version>
     <versions.maven.plugin.version>2.17.1</versions.maven.plugin.version>
     <weld.version>3.1.9.Final</weld.version>
-    <wildfly.common.version>1.7.0.Final</wildfly.common.version>
+    <wildfly.common.version>2.0.1</wildfly.common.version>
     <wildfly.elytron.version>2.6.0.Final</wildfly.elytron.version>
     <xmemcached.version>2.4.8</xmemcached.version>
   </properties>
@@ -509,6 +509,11 @@
         <artifactId>hawtio-default</artifactId>
         <version>${hawtio.version}</version>
         <type>war</type>
+      </dependency>
+      <dependency>
+        <groupId>io.smallrye.common</groupId>
+        <artifactId>smallrye-common-cpu</artifactId>
+        <version>2.6.0</version>
       </dependency>
       <dependency>
         <groupId>jakarta.activation</groupId>
