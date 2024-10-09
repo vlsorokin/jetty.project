@@ -49,7 +49,6 @@ public class EmbeddedQueryManagerTest
     private static final int MAX_EXPIRY_TIME = 1000;
 
     @Test
-    @DisabledOnJre(JRE.JAVA_11)
     public void test()
     {
         String name = DEFAULT_CACHE_NAME + System.currentTimeMillis();
